@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>فروشگاه ویپ</title>
-    <script>
-      sessionStorage.redirect = location.href;
+    <script type="text/javascript">
+      // انتقال به صفحه اصلی با هش
+      window.location.href = '/vape-store/#/' + window.location.pathname.replace('/vape-store/', '');
     </script>
-    <meta http-equiv="refresh" content="0;URL='/vape-store/'">
   </head>
   <body>
+    <div style="text-align: center; padding: 50px;">
+      <h2>در حال انتقال به صفحه اصلی...</h2>
+      <p>اگر به طور خودکار منتقل نشدید، <a href="/vape-store/">اینجا کلیک کنید</a></p>
+    </div>
   </body>
 </html>
